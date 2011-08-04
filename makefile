@@ -25,7 +25,7 @@
 # same setting in Vrui's makefile. By default the directories match; if
 # the installation directory was adjusted during Vrui's installation, it
 # must be adjusted here as well.
-VRUIDIR = /opt/local/Vrui-1.0-066
+VRUIDIR = /opt/local/Vrui-1.0
 
 # Base installation directory for LiDAR Viewer and its configuration
 # file.If this is set to the default of $(PWD), LiDAR Viewer does not
