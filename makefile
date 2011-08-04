@@ -32,7 +32,7 @@ VRUIDIR = /opt/local/Vrui-1.0
 # have to be installed to be run. LiDAR Viewer's executables, and
 # configuration file will be installed in the bin and etc directories
 # underneath the given base directory, respectively.
-INSTALLDIR = $(shell pwd)
+INSTALLDIR = /opt/local/LidarViewer
 
 # Set up additional flags for the C++ compiler:
 CFLAGS = 
