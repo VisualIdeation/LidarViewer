@@ -1,1 +1,1 @@
-bin/LidarViewer -rootSection 3DTV ../data/CAES/fluidsLab.LiDAR/
+bin/LidarViewer -rootSection 3DTV ../data/CAES/Fluids.LiDAR/
