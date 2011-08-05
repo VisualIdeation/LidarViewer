@@ -1,1 +1,1 @@
-bin/LidarViewer ../data/CAES.LiDAR/
+bin/LidarViewer ../data/CAES/Exterior.LiDAR/

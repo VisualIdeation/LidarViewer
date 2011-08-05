@@ -1,1 +1,0 @@
- bin/LidarViewer -rootSection CAVEA02 ../data/caes_photo/triple/East_South_West

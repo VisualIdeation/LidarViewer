@@ -1,1 +1,1 @@
-bin/LidarViewer -rootSection CAVEA02 ../data/CAES_fluidsLab.LiDAR/
+bin/LidarViewer -rootSection CAVEA02 ../data/CAES/fluidsLab.LiDAR/

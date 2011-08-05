@@ -1,1 +1,1 @@
-bin/LidarViewer -rootSection CAVEA02 ../data/KitchenScaled.LiDAR/
+bin/LidarViewer -rootSection CAVEA02 ../data/CAES/Kitchen.LiDAR/

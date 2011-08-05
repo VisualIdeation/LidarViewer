@@ -1,1 +1,1 @@
-bin/LidarViewer -rootSection CAVEA02 ../data/caes_photo.LiDAR/
+bin/LidarViewer -rootSection CAVEA02 ../data/CAES/Photo.LiDAR/
