@@ -216,6 +216,14 @@ class LidarViewer:public Vrui::Application,public GLObject
 	void updateSun(void); // Updates the state of the sun light source
 	void setEnableSun(bool newEnableSun); // Enables or disables the sun light source
 	
+	/* Credit Information - Elements and Methods */
+	bool creditInformation;
+	std::string creditTitle;
+	std::string creditData;
+	std::string creditGraphics;
+	void assignCreditInformation(void) const;
+	void readCreditFile(const char * creditFileName);
+
 	/* Constructors and destructors: */
 	public:
 	LidarViewer(int& argc,char**& argv,char**& appDefaults);

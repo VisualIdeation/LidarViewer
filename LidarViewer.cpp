@@ -61,6 +61,7 @@ Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA
 #include <Vrui/Lightsource.h>
 #include <Vrui/LightsourceManager.h>
 #include <Vrui/Viewer.h>
+#include <Vrui/VRWindow.h>
 #include <Vrui/CoordinateManager.h>
 #include <Vrui/ToolManager.h>
 #include <Vrui/ClusterSupport.h>
@@ -177,6 +178,43 @@ LidarViewer::DataItem::~DataItem(void)
 /****************************
 Methods of class LidarViewer:
 ****************************/
+
+void LidarViewer::assignCreditInformation(void) const
+	{
+
+	if (creditInformation)
+		{
+
+		/* Assign Credit Information */
+		for(int i=0;i<Vrui::getNumWindows();i++)
+			{
+			Vrui::VRWindow * window = Vrui::getWindow(i);
+			window->setCreditTitle((creditTitle).c_str());
+			window->setCreditData((creditData).c_str());
+			window->setCreditGraphics((creditGraphics).c_str());
+			}
+		}
+	}
+
+void LidarViewer::readCreditFile(const char* creditFileName)
+	{
+	try
+		{
+		std::string str(creditFileName);
+		/* Open credit file: */
+		Misc::ConfigurationFile creditFile((str).c_str());
+		Misc::ConfigurationFileSection credit=creditFile.getSection("/Credit");
+		/* Override program settings from credit file: */
+		creditTitle=credit.retrieveValue<std::string>("./title","title");
+		creditData=credit.retrieveValue<std::string>("./data","data authors");
+		creditGraphics=credit.retrieveValue<std::string>("./graphics","graphics authors");
+		creditInformation=true;
+		}
+	catch(std::runtime_error err)
+		{
+		std::cerr<<"Caught exception "<<err.what()<<" in ShowEarthModel::readCreditFile"<<std::endl;
+		}
+	}
 
 GLMotif::Popup* LidarViewer::createSelectorModesMenu(void)
 	{
@@ -672,6 +710,7 @@ void LidarViewer::setEnableSun(bool newEnableSun)
 
 LidarViewer::LidarViewer(int& argc,char**& argv,char**& appDefaults)
 	:Vrui::Application(argc,argv,appDefaults),
+	 creditInformation(false),
 	 octree(0),
 	 renderQuality(0),fncWeight(0.5),
 	 pointSize(3.0f),
@@ -766,6 +805,11 @@ LidarViewer::LidarViewer(int& argc,char**& argv,char**& appDefaults)
 					++i;
 					pointSize=float(atof(argv[i]));
 					}
+				}
+			else if(strcasecmp(argv[i]+1,"creditFile")==0)
+				{
+				++i;
+				readCreditFile(argv[i]);
 				}
 			else if(strcasecmp(argv[i]+1,"enableLighting")==0)
 				pointBasedLighting=true;
@@ -881,6 +925,8 @@ void LidarViewer::initContext(GLContextData& contextData) const
 	glTexParameteri(GL_TEXTURE_1D,GL_TEXTURE_WRAP_S,GL_CLAMP_TO_EDGE);
 	glTexImage1D(GL_TEXTURE_1D,0,GL_RGB,colorMap.getNumEntries(),0,GL_RGBA,GL_FLOAT,colorMap.getColors());
 	glBindTexture(GL_TEXTURE_1D,0);
+
+	assignCreditInformation();
 	}
 
 void LidarViewer::toolCreationCallback(Vrui::ToolManager::ToolCreationCallbackData* cbData)
