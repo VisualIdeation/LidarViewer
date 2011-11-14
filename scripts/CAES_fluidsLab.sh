@@ -1,1 +1,1 @@
-bin/LidarViewer ../data/CAES/Fluids.LiDAR/
+bin/LidarViewer -creditFile scripts/uicaes.credit ../data/CAES/Fluids.LiDAR/

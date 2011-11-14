@@ -1,1 +1,1 @@
-bin/LidarViewer ../data/CAES/Kitchen.LiDAR/
+bin/LidarViewer -creditFile scripts/caes.credit ../data/CAES/Kitchen.LiDAR/

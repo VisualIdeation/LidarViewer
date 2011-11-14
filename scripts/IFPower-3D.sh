@@ -1,1 +1,1 @@
-bin/LidarViewer -rootSection 3DTV ../data/IF_Power/IF_Power.LiDAR/
+bin/LidarViewer -rootSection 3DTV -creditFile scripts/ifpower.credit ../data/IF_Power/IF_Power.LiDAR/

@@ -1,1 +1,1 @@
-bin/LidarViewer ../data/devilswash.LiDAR/
+bin/LidarViewer -creditFile scripts/caesccs.credit ../data/devilswash.LiDAR/

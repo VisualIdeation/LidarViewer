@@ -1,0 +1,8 @@
+section Credit
+        # Set title for credit information
+        title "CAES Photo Point Cloud project"
+        # Set data authors for credit information
+        data "INL, CAES, Noah Snavely, and Luke Hetrick"
+        # Set graphics authors for credit information
+        graphics "Oliver Kreylos"
+endsection

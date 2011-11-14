@@ -1,1 +1,1 @@
-bin/LidarViewer -rootSection CAVEA02 ../data/CAES/Photo.LiDAR/
+bin/LidarViewer -rootSection CAVEA02 -creditFile scripts/luke.credit ../data/CAES/Photo.LiDAR/

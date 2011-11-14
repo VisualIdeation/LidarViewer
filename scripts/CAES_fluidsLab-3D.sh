@@ -1,1 +1,1 @@
-bin/LidarViewer -rootSection 3DTV ../data/CAES/Fluids.LiDAR/
+bin/LidarViewer -rootSection 3DTV -creditFile scripts/uicaes.credit ../data/CAES/Fluids.LiDAR/

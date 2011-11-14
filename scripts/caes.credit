@@ -1,0 +1,8 @@
+section Credit
+        # Set title for credit information
+        title "INL CAES Building LiDAR project"
+        # Set data authors for credit information
+        data "INL, CAES, and Derek Norpchen"
+        # Set graphics authors for credit information
+        graphics "Oliver Kreylos"
+endsection

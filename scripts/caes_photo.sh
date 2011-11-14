@@ -1,1 +1,1 @@
-bin/LidarViewer ../data/CAES/Photo.LiDAR/
+bin/LidarViewer -creditFile scripts/luke.credit ../data/CAES/Photo.LiDAR/

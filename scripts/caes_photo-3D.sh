@@ -1,1 +1,1 @@
-bin/LidarViewer -rootSection 3DTV ../data/CAES/Photo.LiDAR/
+bin/LidarViewer -rootSection 3DTV -creditFile scripts/luke.credit ../data/CAES/Photo.LiDAR/

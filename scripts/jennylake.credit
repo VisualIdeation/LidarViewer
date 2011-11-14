@@ -1,0 +1,8 @@
+section Credit
+        # Set title for credit information
+        title "Jenny Lake, WY, NSF Seismic Belt LiDAR project"
+        # Set data authors for credit information
+        data "Plate Boundary Observatory, NCALM, UNAVCO and EarthScope"
+        # Set graphics authors for credit information
+        graphics "Oliver Kreylos"
+endsection

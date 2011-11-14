@@ -1,1 +1,1 @@
-bin/LidarViewer -rootSection CAVEA02 ../data/Photos/st.peter.Octree/
+bin/LidarViewer -rootSection CAVEA02 -creditFile scripts/st.peter.credit ../data/Photos/st.peter.Octree/

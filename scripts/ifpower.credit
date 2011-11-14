@@ -1,0 +1,8 @@
+section Credit
+        # Set title for credit information
+        title "Idaho Falls, ID New Powerline project"
+        # Set data authors for credit information
+        data "CAES, Idaho Falls Power, and HDR Engineering"
+        # Set graphics authors for credit information
+        graphics "Oliver Kreylos and Patrick O'Leary"
+endsection

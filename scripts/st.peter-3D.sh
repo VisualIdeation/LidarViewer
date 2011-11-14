@@ -1,1 +1,1 @@
-bin/LidarViewer -rootSection 3DTV ../data/Photos/st.peter.Octree/
+bin/LidarViewer -rootSection 3DTV -creditFile scripts/st.peter.credit ../data/Photos/st.peter.Octree/

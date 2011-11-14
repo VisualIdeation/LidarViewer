@@ -1,1 +1,1 @@
-bin/LidarViewer -rootSection CAVEA02 ../data/CAES/Fluids.LiDAR/
+bin/LidarViewer -rootSection CAVEA02 -creditFile scripts/uicaes.credit ../data/CAES/Fluids.LiDAR/

@@ -1,1 +1,1 @@
-bin/LidarViewer -rootSection CAVEA02 ../data/JennyLake.LiDAR/
+bin/LidarViewer -rootSection CAVEA02 -creditFile scripts/jennylake.credit ../data/JennyLake.LiDAR/

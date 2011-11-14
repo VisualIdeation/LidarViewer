@@ -1,0 +1,8 @@
+section Credit
+        # Set title for credit information
+        title "Microsoft and NSF Photo Tourism project"
+        # Set data authors for credit information
+        data "Noah Snavely, Steven M. Seitz, and Richard Szeliski"
+        # Set graphics authors for credit information
+        graphics "Oliver Kreylos"
+endsection

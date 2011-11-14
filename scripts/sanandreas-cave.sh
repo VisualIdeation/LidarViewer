@@ -1,1 +1,1 @@
-bin/LidarViewer -rootSection CAVEA02 ../data/SanAndreas.LiDAR/
+bin/LidarViewer -rootSection CAVEA02 -creditFile scripts/sanandreas.credit ../data/SanAndreas.LiDAR/
